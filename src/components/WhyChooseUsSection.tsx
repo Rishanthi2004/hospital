@@ -32,42 +32,37 @@ export const WhyChooseUsSection: React.FC = () => {
   };
 
   return (
-    <section className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section className="py-10 sm:py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       {/* Header */}
-      <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
-        <span className="text-xs font-bold tracking-widest uppercase text-teal-600 mb-2 block">
-          The CarePlus Difference
+      <div className="text-center max-w-xl mx-auto mb-8 sm:mb-10">
+        <span className="text-xs font-bold tracking-widest uppercase text-teal-600 mb-1.5 block">
+          Why Choose Us
         </span>
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
-          Why Choose CarePlus General Hospital
+        <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-2">
+          Your Health in Safe Hands
         </h2>
-        <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-          We combine internationally recognized medical talent with thoughtful patient amenities 
-          to ensure you receive the safest, most comforting hospital experience.
+        <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+          Top doctors, modern equipment, and dedicated patient care.
         </p>
       </div>
 
-      {/* 6 Feature Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-        {WHY_CHOOSE_US.map((item, index) => (
+      {/* 4 Clean Feature Cards */}
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
+        {WHY_CHOOSE_US.slice(0, 4).map((item, index) => (
           <div
             key={index}
-            className="group bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-cyan-100/90 shadow-sm hover:shadow-lg hover:shadow-cyan-900/5 hover:border-cyan-300 transition-all duration-300 flex flex-col justify-between"
+            className="group bg-white rounded-xl sm:rounded-2xl p-4 sm:p-5 border border-cyan-100/90 shadow-2xs hover:shadow-md hover:border-cyan-300 transition-all flex flex-col justify-between"
           >
             <div>
-              <div className="w-13 h-13 rounded-2xl bg-[#e6f7f9] flex items-center justify-center mb-5 group-hover:scale-110 group-hover:bg-[#d4f2f5] transition-all">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl bg-[#e6f7f9] flex items-center justify-center mb-3 group-hover:scale-105 transition-all">
                 {getIcon(item.icon)}
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-2 group-hover:text-teal-800 transition-colors">
+              <h3 className="text-xs sm:text-sm font-bold text-slate-900 mb-1 group-hover:text-teal-800 transition-colors line-clamp-1">
                 {item.title}
               </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
+              <p className="text-slate-500 text-[11px] sm:text-xs leading-relaxed line-clamp-2">
                 {item.description}
               </p>
-            </div>
-            
-            <div className="mt-6 pt-4 border-t border-slate-100 flex items-center text-xs font-semibold text-teal-700">
-              <span>CarePlus Standard of Excellence</span>
             </div>
           </div>
         ))}

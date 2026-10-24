@@ -17,43 +17,42 @@ export const ContactSection: React.FC = () => {
   const [mapMode, setMapMode] = useState<'standard' | 'campus' | 'parking'>('standard');
 
   return (
-    <section id="contact" className="py-16 sm:py-24 bg-gradient-to-b from-[#eef9fa]/60 to-[#f6fcfc] border-t border-cyan-100/60">
+    <section id="contact" className="py-10 sm:py-16 bg-gradient-to-b from-[#eef9fa]/60 to-[#f6fcfc] border-t border-cyan-100/60">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
-          <span className="text-xs font-bold tracking-widest uppercase text-teal-600 mb-2 block">
-            Location & Access
+        <div className="text-center max-w-xl mx-auto mb-8 sm:mb-10">
+          <span className="text-xs font-bold tracking-widest uppercase text-teal-600 mb-1.5 block">
+            Location
           </span>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">
-            Contact & Hospital Campus
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-2">
+            Contact & Campus Location
           </h2>
-          <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Conveniently situated with dedicated trauma ambulance access, 
-            complimentary valet parking, and comprehensive emergency care around the clock.
+          <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
+            Convenient hospital access with 24/7 emergency and dedicated parking.
           </p>
         </div>
 
         {/* Emergency Alert Banner */}
-        <div className="bg-gradient-to-r from-rose-500 via-rose-600 to-red-600 rounded-2xl sm:rounded-3xl p-5 sm:p-7 text-white shadow-lg shadow-rose-600/15 mb-10 sm:mb-12 flex flex-col md:flex-row items-center justify-between gap-5">
-          <div className="flex items-center gap-4 text-center md:text-left">
-            <div className="w-12 h-12 rounded-2xl bg-white/20 backdrop-blur-xs flex items-center justify-center shrink-0">
-              <ShieldAlert className="w-7 h-7 text-white" />
+        <div className="bg-gradient-to-r from-rose-500 via-rose-600 to-red-600 rounded-2xl p-4 sm:p-6 text-white shadow-md mb-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center shrink-0">
+              <ShieldAlert className="w-6 h-6 text-white" />
             </div>
             <div>
-              <div className="text-sm uppercase tracking-wider font-extrabold text-rose-100">
-                24/7 Level 1 Trauma & Cardiac Emergency Desk
+              <div className="text-xs uppercase tracking-wider font-bold text-rose-100">
+                24/7 Trauma & Emergency
               </div>
-              <div className="text-lg sm:text-xl font-bold">
-                Immediate Ambulance Dispatch & Direct Intake
+              <div className="text-base sm:text-lg font-bold">
+                Immediate Ambulance Dispatch
               </div>
             </div>
           </div>
-          <div className="flex items-center gap-3">
+          <div>
             <a
               href={`tel:${HOSPITAL_INFO.emergencyHotline}`}
-              className="bg-white hover:bg-rose-50 text-rose-600 font-extrabold px-6 py-3 rounded-full text-sm sm:text-base shadow-md transition-all whitespace-nowrap"
+              className="inline-block bg-white hover:bg-rose-50 text-rose-600 font-bold px-5 py-2.5 rounded-full text-xs sm:text-sm shadow-xs transition-all whitespace-nowrap cursor-pointer"
             >
-              Emergency Hotline: {HOSPITAL_INFO.emergencyDisplay}
+              Call: {HOSPITAL_INFO.emergencyDisplay}
             </a>
           </div>
         </div>

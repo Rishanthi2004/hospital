@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Phone, Calendar } from 'lucide-react';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { DepartmentsSection } from './components/DepartmentsSection';
@@ -16,7 +17,7 @@ import { DepartmentDetailModal } from './components/DepartmentDetailModal';
 import { DoctorProfileModal } from './components/DoctorProfileModal';
 import { ServiceDetailModal } from './components/ServiceDetailModal';
 
-import { Department, Doctor, Service } from './data/hospitalData';
+import { Department, Doctor, Service, HOSPITAL_INFO } from './data/hospitalData';
 
 export default function App() {
   // Modal states
@@ -78,35 +79,35 @@ export default function App() {
       <Navbar onOpenBooking={handleOpenBooking} />
 
       {/* Main Content Sections */}
-      <main className="flex-1">
+      <main className="flex-1 pb-16 sm:pb-0">
         {/* 2. Hero Section with Consultation Image & Floating Appointment Panel */}
         <HeroSection
           onOpenBooking={handleOpenBooking}
           onExploreServices={handleExploreServices}
         />
 
-        {/* 3. Our Departments Section (12 departments, 4/row desktop, 2/row mobile) */}
+        {/* 3. Our Departments Section (Compact 6 default + view all) */}
         <DepartmentsSection
           onSelectDepartment={(dept) => setSelectedDepartment(dept)}
           onBookDepartment={handleBookFromDepartment}
         />
 
-        {/* 4. Featured Medical Services Section (8 image-based cards) */}
+        {/* 4. Featured Medical Services Section (Compact 4 default + view all) */}
         <ServicesSection
           onSelectService={(service) => setSelectedService(service)}
           onBookService={handleBookFromService}
         />
 
-        {/* 5. Our Doctors Section (Photo cards, qualifications, department, experience) */}
+        {/* 5. Our Doctors Section (Compact 3 default + view all) */}
         <DoctorsSection
           onSelectDoctor={(doc) => setSelectedDoctor(doc)}
           onBookDoctor={handleBookFromDoctor}
         />
 
-        {/* 6. About Our Hospital Section (2-column layout with hospital interior photo) */}
+        {/* 6. About Our Hospital Section */}
         <AboutSection onOpenBooking={() => handleOpenBooking()} />
 
-        {/* 7. Why Choose Us Section (6 feature cards) */}
+        {/* 7. Why Choose Us Section */}
         <WhyChooseUsSection />
 
         {/* 8. Full In-Page Appointment Booking Form */}
@@ -122,6 +123,25 @@ export default function App() {
         {/* 10. Contact and Hospital Campus Area with Map */}
         <ContactSection />
       </main>
+
+      {/* Mobile Floating Action Bar */}
+      <div className="sm:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-cyan-200/80 p-2.5 px-3 flex items-center gap-2 shadow-lg shadow-slate-900/10">
+        <a
+          href={`tel:${HOSPITAL_INFO.emergencyHotline}`}
+          className="flex-1 py-2.5 px-3 rounded-full border border-rose-200 bg-rose-50/80 text-rose-700 font-bold text-xs flex items-center justify-center gap-1.5 active:scale-95 transition-transform"
+        >
+          <Phone className="w-3.5 h-3.5 text-rose-600" />
+          <span>24/7 Emergency</span>
+        </a>
+        <button
+          type="button"
+          onClick={() => handleOpenBooking()}
+          className="flex-1 py-2.5 px-3 rounded-full bg-[#4ea8b6] hover:bg-[#3d95a3] text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform cursor-pointer"
+        >
+          <Calendar className="w-3.5 h-3.5" />
+          <span>Book Appt</span>
+        </button>
+      </div>
 
       {/* 11. Hospital Footer */}
       <Footer onOpenBooking={() => handleOpenBooking()} />

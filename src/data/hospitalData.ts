@@ -192,6 +192,30 @@ export const DEPARTMENTS: Department[] = [
     floor: 'Basement Level 1 & Ground Floor',
     waitTimesAvg: 'Results within 2-4 hrs',
     keyServices: ['3T High-Field MRI', '128-Slice Low-Dose CT', 'Digital 3D Mammography', 'Full Clinical Pathology']
+  },
+  {
+    id: 'oncology',
+    name: 'Oncology & Cancer Care',
+    shortName: 'Oncology',
+    category: 'specialized',
+    iconName: 'ShieldPlus',
+    description: 'Comprehensive cancer therapies, daycare chemotherapy suites, tumor boards, and oncology rehabilitation.',
+    headDoctor: 'Dr. Meenakshi Sundaram, MD, DM',
+    floor: '4th Floor, Cancer Pavilion',
+    waitTimesAvg: 'Priority consultation',
+    keyServices: ['Medical Oncology', 'Targeted Chemotherapy', 'Immune Therapies', 'Supportive Oncology Care']
+  },
+  {
+    id: 'nephrology',
+    name: 'Nephrology & Dialysis',
+    shortName: 'Nephrology',
+    category: 'specialized',
+    iconName: 'HeartPulse',
+    description: 'Advanced renal medicine, 24/7 hemodialysis suites, kidney disease management, and preventive nephrology.',
+    headDoctor: 'Dr. Rajesh Kannan, MD, DM',
+    floor: '3rd Floor, Dialysis Wing',
+    waitTimesAvg: 'Daily sessions available',
+    keyServices: ['Hemodialysis Suites', 'CRRT in ICU', 'Kidney Care Protocol', 'Renal Biopsy']
   }
 ];
 
