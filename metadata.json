@@ -1,0 +1,6 @@
+{
+  "name": "CarePlus Medical - General Hospital",
+  "description": "Modern, premium general hospital website with comprehensive medical departments, doctor profiles, interactive appointment booking, and emergency healthcare care.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
