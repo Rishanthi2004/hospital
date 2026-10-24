@@ -226,7 +226,7 @@ export const SERVICES: Service[] = [
     department: 'Emergency Care',
     description: 'Round-the-clock emergency medical response with direct ambulance bay access, Level 1 trauma facilities, and rapid cardiac resuscitation units.',
     features: ['24/7 Immediate Board-Certified Physician Access', 'Dedicated Trauma ICU Bays', 'Rapid Stroke & Infarct Protocol', 'Integrated Pediatric ER'],
-    image: '/src/assets/images/hospital_hero_consultation_1792823508472.jpg',
+    image: '/assets/images/service_emergency.jpg',
     coverage: 'Covered by all major insurance networks'
   },
   {
@@ -235,7 +235,7 @@ export const SERVICES: Service[] = [
     department: 'Diagnostic Services',
     description: 'High-resolution imaging including 3-Tesla silent MRI, 128-slice CT scans, 4D ultrasound, and digital fluoroscopy for pinpoint diagnosis.',
     features: ['Ultra-Low Radiation CT Scanner', 'Silent 3T Wide-Bore MRI', 'Same-Day Digital Reports', 'Sub-specialist Radiologist Reading'],
-    image: '/public/assets/aistudio/image_9b76aa39.png',
+    image: '/assets/images/service_mri_imaging.jpg',
     turnaroundTime: 'Under 2 hours for urgent cases',
     coverage: 'Direct billing available'
   },
@@ -245,7 +245,7 @@ export const SERVICES: Service[] = [
     department: 'General Surgery',
     description: 'Next-generation laminar airflow operating theaters with 4K robotic surgical platforms for minimally invasive procedures and swift patient recovery.',
     features: ['Robotic-Assisted Precision Surgery', 'HEPA Laminar Flow Sterile Suites', 'Dedicated Post-Anesthesia Care (PACU)', 'Same-Day Laparoscopic Procedures'],
-    image: '/public/assets/aistudio/image_9b76aa39.png',
+    image: '/assets/images/service_surgery.jpg',
     coverage: 'Inpatient and outpatient surgery benefits apply'
   },
   {
@@ -254,7 +254,7 @@ export const SERVICES: Service[] = [
     department: 'Diagnostic Services',
     description: 'Accredited automated clinical laboratories offering complete biochemistry, microbiology, hematology, immunology, and molecular testing.',
     features: ['Automated Track Testing Systems', 'Online Secure Portal Result Access', 'Routine Labs in 60 Minutes', 'Molecular PCR & Genetics'],
-    image: '/src/assets/images/hospital_interior_hall_1792823509439.jpg',
+    image: '/assets/images/service_lab.jpg',
     turnaroundTime: 'Routine results in 1-2 hours',
     coverage: '100% covered under preventative health plans'
   },
@@ -264,7 +264,7 @@ export const SERVICES: Service[] = [
     department: 'General Medicine',
     description: 'Spacious, sunlit private rooms designed for healing, complete with 24/7 dedicated nursing, telemetry monitoring, and comfortable family sleeper amenities.',
     features: ['Private En-suite Patient Rooms', 'Individual Nurse Call & Monitoring', 'Nutritional Chef-Crafted Menus', 'Quiet Therapeutic Environment'],
-    image: '/src/assets/images/hospital_interior_hall_1792823509439.jpg',
+    image: '/assets/images/hospital_interior_hall_1792823509439.jpg',
     coverage: 'Direct admission coordination'
   },
   {
@@ -273,7 +273,7 @@ export const SERVICES: Service[] = [
     department: 'Pharmacy',
     description: 'Comprehensive inpatient dispensary and retail pharmacy stocking essential prescriptions, specialized oncology therapies, and surgical supplies.',
     features: ['24-Hour Walk-up & Drive-Thru', 'Pharmacist Medication Counseling', 'Automated Refill Program', 'Direct Bedside Discharge Delivery'],
-    image: '/src/assets/images/hospital_hero_consultation_1792823508472.jpg',
+    image: '/assets/images/hospital_interior_hall_1792823509439.jpg',
     coverage: 'Accepts all major prescription cards'
   },
   {
@@ -282,7 +282,7 @@ export const SERVICES: Service[] = [
     department: 'Emergency Care',
     description: 'GPS-tracked, ALS-equipped mobile intensive care ambulances staffed by certified emergency paramedics and flight-ready medical transport teams.',
     features: ['On-board Ventilators & Defibrillators', 'Telemetry Broadcast to ER En Route', 'Average 7.4 Minute Urban Response', 'Inter-Facility ICU Transfer'],
-    image: '/public/assets/aistudio/image_9b76aa39.png',
+    image: '/assets/images/tamilnadu_hospital_building.jpg',
     turnaroundTime: 'Immediate dispatch 24/7',
     coverage: 'Emergency coverage accepted'
   },
@@ -292,7 +292,7 @@ export const SERVICES: Service[] = [
     department: 'General Medicine',
     description: 'Tailored preventative wellness packages including cardiac risk profiles, metabolic panels, cancer markers, and full clinical consultations.',
     features: ['Customized Age & Gender Packages', 'Same-Day Comprehensive Physician Review', 'Actionable Lifestyle Wellness Roadmap', 'Early Warning Risk Detection'],
-    image: '/src/assets/images/hospital_interior_hall_1792823509439.jpg',
+    image: '/assets/images/tamilnadu_hospital_hero.jpg',
     turnaroundTime: 'Complete assessment in half a day',
     coverage: 'Eligible for annual health plans'
   }
@@ -308,7 +308,7 @@ export const DOCTORS: Doctor[] = [
     qualification: 'MD, FACC, FSCAI',
     experience: '15+ Years Experience',
     specialty: 'Coronary Interventions, Angioplasty & Heart Failure',
-    image: '/src/assets/images/doctor_cardiologist_1792823509513.jpg',
+    image: '/assets/images/doctor_cardiologist_1792823509513.jpg',
     languages: ['English', 'Spanish'],
     education: 'Johns Hopkins School of Medicine, Fellow of American College of Cardiology',
     availability: 'Mon, Wed, Fri (9:00 AM - 4:00 PM)'
@@ -322,7 +322,7 @@ export const DOCTORS: Doctor[] = [
     qualification: 'MD, FAAP',
     experience: '18+ Years Experience',
     specialty: 'Neonatal Critical Care & Pediatric Immunology',
-    image: '/src/assets/images/doctor_pediatrician_1792823509640.jpg',
+    image: '/assets/images/doctor_pediatrician_1792823509640.jpg',
     languages: ['English', 'Mandarin'],
     education: 'Harvard Medical School, Boston Children’s Hospital Residency',
     availability: 'Mon - Thu (8:30 AM - 5:00 PM)'
@@ -336,7 +336,7 @@ export const DOCTORS: Doctor[] = [
     qualification: 'MD, FACS',
     experience: '20+ Years Experience',
     specialty: 'Robotic Laparoscopy & Gastrointestinal Surgery',
-    image: '/src/assets/images/hospital_hero_consultation_1792823508472.jpg',
+    image: '/assets/images/hospital_hero_consultation_1792823508472.jpg',
     languages: ['English', 'French'],
     education: 'Mayo Clinic College of Medicine, Chief Resident at Cleveland Clinic',
     availability: 'Tue, Thu, Sat (8:00 AM - 2:00 PM)'
@@ -350,7 +350,7 @@ export const DOCTORS: Doctor[] = [
     qualification: 'MD, FACEP',
     experience: '12+ Years Experience',
     specialty: 'Trauma Life Support & Resuscitative Medicine',
-    image: '/src/assets/images/doctor_cardiologist_1792823509513.jpg',
+    image: '/assets/images/doctor_cardiologist_1792823509513.jpg',
     languages: ['English', 'Russian'],
     education: 'Columbia University Vagelos College of Physicians and Surgeons',
     availability: 'Emergency Department Rota (24/7 Coverage)'
@@ -364,7 +364,7 @@ export const DOCTORS: Doctor[] = [
     qualification: 'MD, FAAOS',
     experience: '16+ Years Experience',
     specialty: 'Minimally Invasive Joint Replacement & Sports Injuries',
-    image: '/src/assets/images/doctor_pediatrician_1792823509640.jpg',
+    image: '/assets/images/doctor_pediatrician_1792823509640.jpg',
     languages: ['English', 'Korean'],
     education: 'Stanford University School of Medicine, Hospital for Special Surgery Fellow',
     availability: 'Mon, Wed, Fri (10:00 AM - 5:30 PM)'
@@ -378,7 +378,7 @@ export const DOCTORS: Doctor[] = [
     qualification: 'MD, FACOG',
     experience: '14+ Years Experience',
     specialty: 'Maternal-Fetal Health & Minimally Invasive Gynecologic Surgery',
-    image: '/src/assets/images/doctor_cardiologist_1792823509513.jpg',
+    image: '/assets/images/doctor_cardiologist_1792823509513.jpg',
     languages: ['English', 'Hindi', 'Gujarati'],
     education: 'Penn Medicine Perelman School of Medicine',
     availability: 'Tue, Wed, Fri (9:00 AM - 4:30 PM)'

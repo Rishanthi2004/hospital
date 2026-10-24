@@ -14,7 +14,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden shadow-lg border-2 border-white">
               <img
-                src="/src/assets/images/hospital_interior_hall_1792823509439.jpg"
+                src="/assets/images/hospital_interior_hall_1792823509439.jpg"
                 alt="CarePlus General Hospital Modern Lobby"
                 referrerPolicy="no-referrer"
                 className="w-full h-44 sm:h-72 object-cover object-center"
